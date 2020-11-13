@@ -8,7 +8,7 @@ App = {};
     // Resize screen and addClass/removeClass of menu
     App.checkWindowSize = () => {
         var width = $(window).width(),
-            new_class = width > 1200 ? 'menu-desk' : 'menu-mobile';
+            new_class = width > 1420 ? 'menu-desk' : 'menu-mobile';
 
         $('header').removeClass('menu-desk menu-mobile').addClass(new_class);
     }
@@ -22,6 +22,11 @@ App = {};
     $('.bg-pushmenu').on('click', function() {
         $(this).removeClass('in');
         $('body .main-nav').removeClass('active');
+    });
+
+    $('.menu li').on('click', function() {
+        console.log('vl');
+        $('.sub-menu').toggleClass('active');
     })
 
     // App.closeMenu = () => {
