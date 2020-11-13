@@ -1,0 +1,303 @@
+/* Style For All */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+span,
+img,
+a {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+:root {
+    --primary-color: #2c2f36;
+    --primary-font-size: 1.6rem;
+    --secondary-font-size: 1.4rem;
+    --font-size1: 1.8rem;
+    --primary-font: "Roboto", sans-serif;
+    --color1: #fff;
+    --color2: #004e7f;
+    --color3: #ccd3d9;
+    --color4: #95c4e6;
+    --color5: #1c6399;
+    --color6: #f5f6f7;
+    --color7: #020202;
+}
+
+/* Menu General */
+header ul li a {
+    font-size: var(--secondary-font-size);
+    font-weight: 500;
+    line-height: 20px;
+}
+header ul li a:hover {
+    color: #004e7f;
+}
+/* Menu Mobile */
+header.menu-mobile {
+    background-color: #004e7f;
+}
+header.menu-mobile .main-nav {
+    background-color: var(--color1);
+    transition: 0.8s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    z-index: 10;
+    min-width: 280px;
+    height: 100%;
+    padding: 1.2rem;
+}
+header.menu-mobile .main-nav {
+    padding-top: 0;
+}
+header.menu-mobile .main-nav .right-menu,
+header.menu-mobile .main-nav .left-menu {
+    padding: 1.6rem;
+}
+header.menu-mobile .main-nav.active {
+    transform: translateX(0);
+}
+header.menu-mobile .logo-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6.4rem;
+    padding: 1rem;
+}
+header.menu-mobile .logo-mobile a,
+header.menu-mobile .logo-mobile span {
+    color: var(--color1);
+}
+header.menu-mobile .logo-mobile .group-button-bar span {
+    cursor: pointer;
+}
+header.menu-mobile .logo-mobile .group-button-bar span.favorite {
+    margin-right: 1rem;
+}
+header.menu-mobile .main-nav .list-menu ul li.active {
+    background-color: var(--color6);
+}
+header.menu-mobile .main-nav .logo {
+    display: none;
+}
+header.menu-mobile .main-nav .row {
+    flex-direction: column;
+}
+header.menu-mobile .group-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header.menu-mobile .group-login span.favorite {
+    display: none;
+}
+header.menu-mobile .group-login span {
+    display: inline-block;
+    width: 114px;
+}
+header.menu-mobile .group-login span a,
+header.menu-mobile .post span a {
+    background: var(--color1);
+    border: 1px solid var(--color3);
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    color: var(--color2);
+    display: inline-block;
+    font-size: var(--secondary-font-size);
+    padding: 1rem 1.6rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+header.menu-mobile .group-login span a:hover,
+header.menu-mobile .post span a:hover {
+    border: 1px solid var(--color4);
+    background: var(--color7);
+}
+header.menu-mobile .group-login span a.register:hover {
+    background: var(--color5);
+}
+header.menu-mobile .post {
+    margin-top: 1rem;
+}
+header.menu-mobile .group-login span a.register {
+    background: var(--color2);
+    color: var(--color1);
+}
+header.menu-mobile .list-menu ul.menu li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -11px;
+    height: 4.5rem;
+    margin-right: -11px;
+    padding-left: 0.5rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+    position: relative;
+}
+header.menu-mobile .list-menu ul.menu li:after {
+    position: absolute;
+    height: 1px;
+    border-bottom: 1px solid #f5f6f7;
+    bottom: 0;
+    left: 58px;
+    content: '';
+    width: calc(100% - 58px);
+}
+header.menu-mobile .list-menu ul li a svg {
+    width: 35px !important;
+    margin-right: 10px;
+}
+header.menu-mobile .list-menu .sub-menu {
+    display: none;
+}
+.bg-pushmenu.in {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(10, 13, 20, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* Menu Desk */
+header.menu-desk {
+    background-color: var(--color1);
+}
+header.menu-desk .main-nav {
+    padding: 1.6rem;
+}
+header.menu-desk .main-nav .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header.menu-desk ul svg {
+    display: none;
+}
+header.menu-desk .left-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+header.menu-desk .left-menu .logo {
+    margin-right: 1rem;
+}
+header.menu-desk .left-menu .list-menu ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header.menu-desk .left-menu .list-menu ul.menu li {
+    margin-right: 2rem;
+}
+header.menu-desk .left-menu .list-menu ul.menu li:last-child {
+    margin-right: 0;
+}
+header.menu-desk .left-menu .list-menu ul.menu .sub-menu {
+    display: none;
+}
+/* ul {
+    position: absolute;
+    margin: 0;
+    list-style:none;
+    background: rgb(22, 160, 133);
+}
+
+li {
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+li:hover > ul {
+    display: block;
+}
+ul ul {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 5px 10px;
+}
+ul ul li {
+    display: block;
+}
+
+ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px dashed #FFF;
+} */
+/* Menu Mobile*/
+/* End Menu Mobile*/
+/* Menu Desk*/
+/* End Menu Desk*/
+/* 768px */
+@media only screen and (min-width: 768px) {
+}
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+}
+/* 1024px */
+@media only screen and (min-width: 1201px) {
+    .logo-mobile {
+        display: none;
+    }
+    header.menu-desk .main-nav .row {
+        margin: 0;
+    }
+    .header.menu-desk .group-login span.favorite {
+        display: block;
+        color: unset;
+    }
+}
