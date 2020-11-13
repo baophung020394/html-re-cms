@@ -41,3 +41,5 @@ App = {};
     })
 
 })(jQuery);
+// menu sticky
+// https://codepen.io/prvnbist/pen/GQMPZq

@@ -59,6 +59,7 @@ body {
     --color5: #1c6399;
     --color6: #f5f6f7;
     --color7: #020202;
+    --color8: #edf7ff;
 }
 
 /* Menu General */
@@ -170,7 +171,7 @@ header.menu-mobile .list-menu ul.menu li {
     flex-direction: row;
     align-items: center;
     margin-left: -11px;
-    height: 4.5rem;
+    height: 4.5rem; 
     margin-right: -11px;
     padding-left: 0.5rem;
     padding-right: 1.2rem;
@@ -225,7 +226,7 @@ header.menu-desk .left-menu {
     justify-content: flex-start;
 }
 header.menu-desk .left-menu .logo {
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 header.menu-desk .left-menu .list-menu ul.menu {
     display: flex;
@@ -239,45 +240,79 @@ header.menu-desk .left-menu .list-menu ul.menu li:last-child {
     margin-right: 0;
 }
 header.menu-desk .left-menu .list-menu ul.menu .sub-menu {
-    display: none;
+    /* display: none; */
 }
-/* ul {
+header.menu-desk .right-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header.menu-desk .right-menu .group-login span,
+header.menu-desk .right-menu .group-login {
+    margin-right: 2rem;
+}
+header.menu-desk .right-menu .group-login span:last-child {
+    margin-right: 0;
+}
+header.menu-desk .right-menu .group-login span .login:after {
+    content: '';
+    border-right: 1px solid var(--color7);
+    margin-left: 2rem;
+}
+header.menu-desk .right-menu .post a {
+    border: 1px solid #ccd3d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: #004e7f;
+    font-weight: 500;
+    line-height: 20px;
+}
+header.menu-desk .right-menu .post a:hover {
+    border: 1px solid var(--color4);
+    background: var(--color8);
+}
+
+header.menu-desk .list-menu ul {
     position: absolute;
     margin: 0;
     list-style:none;
-    background: rgb(22, 160, 133);
 }
 
-li {
+header.menu-desk .list-menu li {
     display: inline-block;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     position: relative;
 }
-li:hover > ul {
+header.menu-desk .list-menu li:hover > ul {
     display: block;
 }
-ul ul {
+header.menu-desk .list-menu ul ul {
     position: absolute;
     display: none;
     margin: 0;
     padding: 5px 10px;
 }
-ul ul li {
+header.menu-desk .list-menu ul ul li {
     display: block;
 }
 
-ul ul ul {
+header.menu-desk .list-menu ul ul ul {
     position: absolute;
     top: 0;
     left: 100%;
 }
-a{
-  color: #FFF;
+header.menu-desk .list-menu a{
+  /* color: #FFF; */
   text-decoration: none;
 }
-a:hover {
+header.menu-desk .list-menu a:hover {
   border-bottom: 1px dashed #FFF;
-} */
+}
+header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu li ul li,
+header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu li {
+    margin-right: 0;
+}
 /* Menu Mobile*/
 /* End Menu Mobile*/
 /* Menu Desk*/
