@@ -311,7 +311,9 @@ header.menu-desk .list-menu a:hover {
 }
 header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu li ul li,
 header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu li {
-    margin-right: 0;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1rem;
 }
 header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu ul ,
 header.menu-desk .left-menu .list-menu ul.menu li ul.sub-menu {
